@@ -14,22 +14,22 @@ public class cashmachine {
             System.out.println("3. Kontostand");
             System.out.println("4. Beenden");
             Scanner scanner = new Scanner(System.in);
-            int selection = scanner.nextInt();
-            if (selection == 1) {
+            int pressed = scanner.nextInt();
+            if (pressed == 1) {
                 Scanner scanner1 = new Scanner(System.in);
                 double deposit = scanner1.nextDouble();
                 double plus = deposit;
                 System.out.println("Ihr Kontostand beträgt " + deposit + " €");
                 total += plus;
-            } else if (selection == 2) {
+            } else if (pressed == 2) {
                 Scanner scanner2 = new Scanner(System.in);
                 double abheben = scanner2.nextInt();
                 var minus = abheben;
                 System.out.println("Ihr Kontostand beträgt " + abheben + " €");
                 total -= minus;
-            }else if (selection == 3) {
+            }else if (pressed == 3) {
                 System.out.println("Ihr Kontostand beträgt " + total + " €");
-            }else if (selection == 4) {
+            }else if (pressed == 4) {
                 isFinished = true;
             }
 
